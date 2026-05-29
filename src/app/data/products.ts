@@ -54,17 +54,17 @@ export const products: Product[] = [
   },
   {
     id: '2',
-    title: 'Luminárias Para-Lâmpadas',
-    slug: 'luminarias-para-lampadas',
+    title: 'Luminárias para frigoríficos',
+    slug: 'luminarias-para-frigorificos',
     category: 'Industrial',
     description:
       'Suportes robustos para lâmpadas LED tubulares, ideal para instalações industriais e comerciais que exigem iluminação uniforme.',
-    shortDescription: 'Suporte para lâmpadas LED tubulares',
+    shortDescription: 'Suporte para frigorificos em LED ',
     mainImage:
-      'https://images.unsplash.com/photo-1605231752611-80a6102075d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
+      'https://potenze.com.br/wp-content/uploads/2025/03/7.png',
     images: [
-      'https://images.unsplash.com/photo-1605231752611-80a6102075d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200',
-      'https://images.unsplash.com/photo-1511676064822-23578cfec888?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200',
+      'https://potenze.com.br/wp-content/uploads/2025/03/7.png',
+      'https://potenze.com.br/wp-content/uploads/2025/03/7.png',
     ],
     specifications: [
       { label: 'Grau de Proteção', value: 'IP20 / IP40' },
@@ -85,17 +85,17 @@ export const products: Product[] = [
   },
   {
     id: '3',
-    title: 'Luminárias Para Mangueira',
-    slug: 'luminarias-para-mangueira',
+    title: 'Luminárias para Áreas Classificadas',
+    slug: 'luminarias-para-areas-classificadas',
     category: 'Industrial',
     description:
-      'Sistema de iluminação flexível com mangueira LED, perfeito para áreas que necessitam de iluminação adaptável e resistente.',
+      'Sistema de iluminação flexível com  LED, perfeito para áreas que necessitam de iluminação adaptável e resistente.',
     shortDescription: 'Flexibilidade e durabilidade industrial',
     mainImage:
-      'https://images.unsplash.com/photo-1584806669914-f996b7e53dc7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
+      'https://potenze.com.br/wp-content/uploads/2025/03/2.png',
     images: [
-      'https://images.unsplash.com/photo-1584806669914-f996b7e53dc7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200',
-      'https://images.unsplash.com/photo-1574229167023-3a904380c8d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200',
+      'https://potenze.com.br/wp-content/uploads/2025/03/2.png',
+      'https://potenze.com.br/wp-content/uploads/2025/03/2.png',
     ],
     specifications: [
       { label: 'Grau de Proteção', value: 'IP65' },
@@ -116,17 +116,17 @@ export const products: Product[] = [
   },
   {
     id: '4',
-    title: 'Luminárias Para Vara',
-    slug: 'luminarias-para-vara',
+    title: 'Luminárias High bay',
+    slug: 'luminarias-high-bay',
     category: 'Industrial',
     description:
-      'Luminárias lineares com instalação em vara, proporcionando iluminação eficiente para galpões e áreas industriais.',
+      'Luminárias High bay, proporcionando iluminação eficiente para galpões e áreas industriais.',
     shortDescription: 'Instalação versátil e resistente',
     mainImage:
-      'https://images.unsplash.com/photo-1574229167023-3a904380c8d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
+      'https://potenze.com.br/wp-content/uploads/2025/03/6.png',
     images: [
-      'https://images.unsplash.com/photo-1574229167023-3a904380c8d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200',
-      'https://images.unsplash.com/photo-1728411667205-84ec6e8c119c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200',
+      'https://potenze.com.br/wp-content/uploads/2025/03/6.png',
+      'https://potenze.com.br/wp-content/uploads/2025/03/6.png',
     ],
     specifications: [
       { label: 'Grau de Proteção', value: 'IP40' },
@@ -147,18 +147,18 @@ export const products: Product[] = [
   },
   {
     id: '5',
-    title: 'Luminárias Linear IP65K',
-    slug: 'luminarias-linear-ip65k',
+    title: 'Luminárias High Bay Modular',
+    slug: 'luminarias-high-bay-modular', 
     category: 'Industrial',
     description:
       'Luminária linear de alta performance com proteção IP65, ideal para ambientes industriais que exigem iluminação robusta.',
     shortDescription: 'Design linear com proteção IP65',
     mainImage:
-      'https://images.unsplash.com/photo-1767294273869-d7d15bc5f80d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
+      'https://potenze.com.br/wp-content/uploads/2026/03/HIGH-BAY-150W-E2-980x784.png',
     images: [
-      'https://images.unsplash.com/photo-1767294273869-d7d15bc5f80d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200',
-      'https://images.unsplash.com/photo-1756934436813-a0c1c09cc826?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200',
-      'https://images.unsplash.com/photo-1767294274700-c2a68decaad5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200',
+      'https://potenze.com.br/wp-content/uploads/2026/03/HIGH-BAY-150W-E2-980x784.png',
+      'https://potenze.com.br/wp-content/uploads/2026/03/HIGH-BAY-150W-E2-980x784.png',
+      'https://potenze.com.br/wp-content/uploads/2026/03/HIGH-BAY-150W-E2-980x784.png',
     ],
     specifications: [
       { label: 'Grau de Proteção', value: 'IP65' },
@@ -182,17 +182,17 @@ export const products: Product[] = [
   },
   {
     id: '6',
-    title: 'Luminárias Linear IP56',
-    slug: 'luminarias-linear-ip56',
+    title: 'Refletor Ultra',
+    slug: 'refletor-ultra',
     category: 'Industrial',
     description:
-      'Luminária linear com proteção IP56, oferecendo iluminação de alto desempenho para ambientes industriais e comerciais.',
+      'Refletor ultra com proteção IP56, oferecendo iluminação de alto desempenho para ambientes industriais e comerciais.',
     shortDescription: 'Iluminação linear de alto desempenho',
     mainImage:
-      'https://images.unsplash.com/photo-1756934436813-a0c1c09cc826?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
+      'https://potenze.com.br/wp-content/uploads/2026/03/MODULAR-150W-A2-980x784.png',
     images: [
-      'https://images.unsplash.com/photo-1756934436813-a0c1c09cc826?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200',
-      'https://images.unsplash.com/photo-1583580311631-c24cfc6b3a59?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200',
+      'https://potenze.com.br/wp-content/uploads/2026/03/MODULAR-150W-A2-980x784.png',
+      'https://potenze.com.br/wp-content/uploads/2026/03/MODULAR-150W-A2-980x784.png',
     ],
     specifications: [
       { label: 'Grau de Proteção', value: 'IP56' },
@@ -214,18 +214,18 @@ export const products: Product[] = [
   },
   {
     id: '7',
-    title: 'Luminárias High Bay',
-    slug: 'luminarias-high-bay',
+    title: 'Luminaria Publica',
+    slug: 'luminarias-publicas',
     category: 'Alta Performance',
     description:
       'Luminárias de alta potência para pé-direito alto, ideais para galpões industriais, armazéns e centros de distribuição.',
     shortDescription: 'Ideal para pé-direito alto',
     mainImage:
-      'https://images.unsplash.com/photo-1728411667205-84ec6e8c119c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
+      'https://potenze.com.br/wp-content/uploads/2026/03/LUMINARIA-PUBLICA-150W-980x784.png',
     images: [
-      'https://images.unsplash.com/photo-1728411667205-84ec6e8c119c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200',
-      'https://images.unsplash.com/photo-1724660579557-b03a78094806?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200',
-      'https://images.unsplash.com/photo-1685459143178-2c24b66d44df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200',
+      'https://potenze.com.br/wp-content/uploads/2026/03/LUMINARIA-PUBLICA-150W-980x784.png',
+      'https://potenze.com.br/wp-content/uploads/2026/03/LUMINARIA-PUBLICA-150W-980x784.png',
+      'https://potenze.com.br/wp-content/uploads/2026/03/LUMINARIA-PUBLICA-150W-980x784.png',
     ],
     specifications: [
       { label: 'Grau de Proteção', value: 'IP65' },
@@ -250,17 +250,17 @@ export const products: Product[] = [
   },
   {
     id: '8',
-    title: 'Luminárias à Prova de Explosão',
-    slug: 'luminarias-prova-explosao',
+    title: 'Luminárias Decorativa',
+    slug: 'luminarias-decorativas',
     category: 'Áreas Classificadas',
     description:
-      'Luminárias certificadas para áreas classificadas, com proteção à prova de explosão para ambientes com gases e vapores inflamáveis.',
+      'Luminárias decorativas certificadas para áreas classificadas, combinando segurança e design para ambientes industriais e comerciais.',
     shortDescription: 'Para áreas classificadas',
     mainImage:
-      'https://images.unsplash.com/photo-1567005363131-ebfdff6371be?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
+      'https://potenze.com.br/wp-content/uploads/2026/03/LUMINARIA-DECORATIVA-CINZA-CHUMBO-N-980x784.png',
     images: [
-      'https://images.unsplash.com/photo-1567005363131-ebfdff6371be?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200',
-      'https://images.unsplash.com/photo-1623049764404-681de0eefb4d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200',
+      'https://potenze.com.br/wp-content/uploads/2026/03/LUMINARIA-DECORATIVA-CINZA-CHUMBO-N-980x784.png',
+      'https://potenze.com.br/wp-content/uploads/2026/03/LUMINARIA-DECORATIVA-CINZA-CHUMBO-N-980x784.png',
     ],
     specifications: [
       { label: 'Certificação', value: 'Ex d IIC T6 Gb' },
