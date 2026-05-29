@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { WhatsAppButton } from './components/WhatsAppButton';
@@ -10,7 +10,7 @@ import { ProductsPage } from './pages/ProductsPage';
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <ScrollToTop />
       <div className="min-h-screen bg-white">
         <Header />
@@ -23,6 +23,6 @@ export default function App() {
         <Footer />
         <WhatsAppButton />
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
