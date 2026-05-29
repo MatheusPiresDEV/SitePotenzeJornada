@@ -41,11 +41,13 @@ export function CTA() {
             className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12"
           >
             <a
-              href="tel:+554132739999"
+              href="tel:+554133739799"
+
               className="group inline-flex items-center gap-3 bg-white text-[#8B1E1E] px-8 py-4 rounded-lg font-semibold hover:bg-neutral-100 transition-all hover:scale-105 shadow-xl w-full sm:w-auto justify-center"
             >
               <Phone className="w-5 h-5" />
-              (41) 3273-9999
+              (41) 3373-9799
+
               <ArrowRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity -ml-2 group-hover:ml-0" />
             </a>
             <a

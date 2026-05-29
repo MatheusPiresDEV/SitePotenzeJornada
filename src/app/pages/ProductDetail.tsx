@@ -1,4 +1,4 @@
-import { useParams, Link, useNavigate } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import {
   ArrowLeft,
@@ -48,31 +48,23 @@ export function ProductDetail() {
   const { slug } = useParams<{ slug: string }>();
   const product = slug ? getProductBySlug(slug) : undefined;
   const [selectedImage, setSelectedImage] = useState(0);
-  const navigate = useNavigate();
 
-  const scrollToContact = () => {
-    navigate('/');
-    setTimeout(() => {
-      const element = document.getElementById('contato');
-      if (element) {
-        const offset = 80;
-        const elementPosition = element.getBoundingClientRect().top;
-        const offsetPosition = elementPosition + window.pageYOffset - offset;
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: 'smooth',
-        });
-      }
-    }, 100);
+  const whatsappNumber = '554133739799'; // +55 41 3373-9799
+
+  const openWhatsAppForProduct = () => {
+    if (!product) return;
+
+    const message = `Olá gostaria de saber mais sobre ${product.title}`;
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+
+    window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
   };
 
   if (!product) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-neutral-50">
         <div className="text-center">
-          <h1 className="text-4xl font-bold text-neutral-900 mb-4">
-            Produto não encontrado
-          </h1>
+          <h1 className="text-4xl font-bold text-neutral-900 mb-4">Produto não encontrado</h1>
           <Link
             to="/"
             className="inline-flex items-center gap-2 text-[#8B1E1E] hover:underline"
@@ -90,7 +82,7 @@ export function ProductDetail() {
       <div className="bg-white border-b border-neutral-200 py-4 sticky top-20 z-40">
         <div className="container mx-auto px-6 lg:px-12">
           <Link
-            to="/"
+            to="/produtos"
             className="inline-flex items-center gap-2 text-neutral-600 hover:text-[#8B1E1E] transition-colors"
           >
             <ArrowLeft className="w-5 h-5" />
@@ -148,29 +140,28 @@ export function ProductDetail() {
               {product.category}
             </div>
 
-            <h1 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-4">
-              {product.title}
-            </h1>
-
+            <h1 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-4">{product.title}</h1>
             <p className="text-xl text-neutral-600 mb-8">{product.description}</p>
 
             <div className="flex flex-wrap gap-4 mb-12">
               <button
-                onClick={scrollToContact}
+                onClick={openWhatsAppForProduct}
                 className="inline-flex items-center gap-2 bg-[#8B1E1E] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#6B1515] transition-all hover:scale-105"
               >
                 Solicitar Orçamento
               </button>
-              <button className="inline-flex items-center gap-2 bg-neutral-900 text-white px-8 py-4 rounded-lg font-semibold hover:bg-neutral-800 transition-all hover:scale-105">
+
+              <button
+                className="inline-flex items-center gap-2 bg-neutral-900 text-white px-8 py-4 rounded-lg font-semibold hover:bg-neutral-800 transition-all hover:scale-105"
+                type="button"
+              >
                 <Download className="w-5 h-5" />
                 Baixar Catálogo
               </button>
             </div>
 
             <div className="bg-white rounded-2xl p-8 border border-neutral-200 mb-8">
-              <h2 className="text-2xl font-bold text-neutral-900 mb-6">
-                Características
-              </h2>
+              <h2 className="text-2xl font-bold text-neutral-900 mb-6">Características</h2>
               <ul className="space-y-3">
                 {product.features.map((feature, index) => (
                   <li key={index} className="flex items-start gap-3">
@@ -195,13 +186,9 @@ export function ProductDetail() {
             <div className="w-12 h-12 rounded-xl bg-[#8B1E1E]/10 flex items-center justify-center">
               <Settings className="w-6 h-6 text-[#8B1E1E]" />
             </div>
-            <h2 className="text-3xl font-bold text-neutral-900">
-              Especificações Técnicas
-            </h2>
+            <h2 className="text-3xl font-bold text-neutral-900">Especificações Técnicas</h2>
           </div>
-          <p className="text-neutral-600 mb-8 ml-16">
-            Dados técnicos completos do produto
-          </p>
+          <p className="text-neutral-600 mb-8 ml-16">Dados técnicos completos do produto</p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {product.specifications.map((spec, index) => {
@@ -220,12 +207,8 @@ export function ProductDetail() {
                     <div className="w-10 h-10 rounded-lg bg-white border border-neutral-200 flex items-center justify-center mb-3 group-hover:bg-[#8B1E1E] group-hover:border-[#8B1E1E] transition-colors">
                       <Icon className="w-5 h-5 text-[#8B1E1E] group-hover:text-white transition-colors" />
                     </div>
-                    <p className="text-sm uppercase tracking-wide text-neutral-500 mb-1">
-                      {spec.label}
-                    </p>
-                    <p className="text-lg text-neutral-900 font-semibold leading-snug">
-                      {spec.value}
-                    </p>
+                    <p className="text-sm uppercase tracking-wide text-neutral-500 mb-1">{spec.label}</p>
+                    <p className="text-lg text-neutral-900 font-semibold leading-snug">{spec.value}</p>
                   </div>
                 </motion.div>
               );
@@ -240,20 +223,19 @@ export function ProductDetail() {
           transition={{ duration: 0.6 }}
           className="mt-16 bg-gradient-to-br from-neutral-900 to-[#8B1E1E] rounded-2xl p-12 text-center text-white"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Interessado neste produto?
-          </h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Interessado neste produto?</h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-            Entre em contato com nossa equipe para mais informações e orçamento
-            personalizado
+            Entre em contato com nossa equipe para mais informações e orçamento personalizado
           </p>
+
           <div className="flex flex-wrap items-center justify-center gap-4">
             <a
-              href="tel:+554132739999"
+              href="tel:+554133739799"
               className="inline-flex items-center gap-2 bg-white text-[#8B1E1E] px-8 py-4 rounded-lg font-semibold hover:bg-neutral-100 transition-all hover:scale-105"
             >
-              (41) 3273-9999
+              (41) 3373-9799
             </a>
+
             <a
               href="mailto:vendas@potenze.com.br"
               className="inline-flex items-center gap-2 bg-[#8B1E1E] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#6B1515] transition-all hover:scale-105 border-2 border-white/20"
@@ -266,3 +248,4 @@ export function ProductDetail() {
     </div>
   );
 }
+

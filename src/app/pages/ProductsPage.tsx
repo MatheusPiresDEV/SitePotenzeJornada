@@ -317,10 +317,10 @@ export function ProductsPage() {
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <a
-              href="tel:+554132739999"
+              href="tel:+554133739799"
               className="inline-flex items-center gap-2 bg-white text-[#8B1E1E] px-8 py-4 rounded-lg font-semibold hover:bg-neutral-100 transition-all hover:scale-105"
             >
-              (41) 3273-9999
+              (41) 3373-9799
             </a>
             <a
               href="mailto:vendas@potenze.com.br"

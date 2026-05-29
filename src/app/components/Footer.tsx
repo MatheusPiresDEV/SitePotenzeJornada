@@ -69,8 +69,8 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <Phone className="w-5 h-5 text-white/60 flex-shrink-0 mt-0.5" />
                 <div>
-                  <div className="text-white/80">(41) 3273-9999</div>
-                  <div className="text-white/80">(41) 3276-9999</div>
+                  <div className="text-white/80">(41) 3373-9799</div>
+                  <div className="text-white/80">(41) 3373-9799</div>
                 </div>
               </li>
               <li className="flex items-start gap-3">
@@ -117,7 +117,7 @@ export function Footer() {
           </div>
 
           <p className="text-white/60 text-sm text-center md:text-right">
-            © 2026 Potenze Iluminação LED. Todos os direitos reservados.
+            © 2026 SPMA. Todos os direitos reservados.
           </p>
         </div>
       </div>
