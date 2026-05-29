@@ -89,13 +89,13 @@ export function Header() {
             >
               Produtos
             </Link>
-            <Link
+            {/* <Link
               to="/uml"
               className="px-4 py-2 hover:bg-white/10 rounded-lg transition-colors text-left"
               onClick={() => setIsMenuOpen(false)}
             >
               UML
-            </Link>
+            </Link> */}
             <button
               onClick={() => scrollToSection('parceiros')}
               className="px-4 py-2 hover:bg-white/10 rounded-lg transition-colors text-left"
